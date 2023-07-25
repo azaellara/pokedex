@@ -88,6 +88,7 @@ header form {
 }
 
 .btn-search {
+    display: block;
     border: none;
     outline: none;
     border-radius: 25px;
@@ -447,4 +448,83 @@ Styles of Pokemon Single Page
 .btn-load-more:hover {
     background-color: var(--color-primary-hover);
     color: #000;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+            max-width: 768px;
+            margin: auto;
+        }
+
+    header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            padding: 40px 0;
+        }
+    .logo img {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+    header form {
+            display: flex;
+            align-items: center;
+        
+            margin: auto;
+        }
+    
+        .form-group input {
+            /* padding: 15px 30px; */
+            font-family: inherit;
+            width: 200px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+    .btn-search{
+        display:none;
+    }
+    .container-filter {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: end;
+        padding-right: 127px;
+        
+    }
+    .card-list-pokemon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+    @media screen and (max-width: 480px) {
+
+    .container {
+            max-width: 480px;
+            margin: 0 auto;
+    }
+
+    .form-group input {
+
+        font-family: inherit;
+        width: 100px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .container-filter {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: end;
+            padding-right: 62px;
+    
+        }
+
+            
+        }
+
 }
